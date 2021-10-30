@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -24,11 +25,15 @@ img {
   height: auto;
   display: block;
 }
-textarea {
+textarea,
+input {
   border: none;
   overflow: auto;
   outline: none;
+  font-family: inherit;
+  font-size: inherit;
 }
+
 body {
   background: rgb(2, 0, 36);
   background: linear-gradient(
@@ -57,28 +62,41 @@ body {
   flex-direction: column;
   margin-top: 30px;
 }
-.comment-input {
+.comment-textarea {
   padding: 1em;
   width: 25em;
   height: 10em;
 }
 .comment-item {
+  line-height: 20px;
   margin-left: 8px;
   padding: 10px;
 }
 .comment.selected {
-  /* border-radius: 50%; */
   background-color: #fff;
-  box-shadow: 0 0 20px 0px #fff, /* inner white */ 0 0 30px 0px #f0f,
-    /* middle magenta */ 0 0 50px 10px #0ff; /* outer cyan */
+  box-shadow: 0 0 20px 0px #fff, 0 0 30px 0px #f0f, 0 0 50px 10px #0ff;
 }
 .comment {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  height: 40px;
+}
+.comment-input {
+  line-height: 20px;
+  padding: 10px;
+  margin-left: 8px;
+  background: transparent;
+  width: inherit;
+}
+.comment-button-container {
+  display: flex;
 }
 .comment-button {
+  padding: 4px;
+  border: none;
   background: rgb(59, 214, 216);
-  /* color: rgba(16, 16, 16); */
+
   background: linear-gradient(
     0deg,
     rgba(59, 214, 216, 0.5) 0%,

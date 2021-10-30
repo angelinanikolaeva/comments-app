@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import CommentForm from "./components/CommentForm.jsx";
 import CommentList from "./components/CommentList";
-// import { getComments as getCommentsApi } from "./data/api";
 
 function App() {
   const [inputText, setInputText] = useState("");
@@ -18,12 +17,6 @@ function App() {
   const saveCommentsLocalStorage = useCallback(() => {
     localStorage.setItem("comments", JSON.stringify(comments));
   }, [comments]);
-
-  // useEffect(() => {
-  //   getCommentsApi().then((data) => {
-  //     setComments(data);
-  //   });
-  // }, []);
 
   useEffect(() => {
     getCommentsLocalStorage();
