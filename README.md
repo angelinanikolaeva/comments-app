@@ -10,8 +10,7 @@
     Simple comments app made in ReactJS
     <br/>
     <br/>
-    <a href="https://github.com/Comments App/comments-app">View Demo</a>
-    .
+    <a href="https://angelinanikolaeva.github.io/comments-app/">View Demo</a>
   </p>
 </p>
 
