@@ -93,6 +93,7 @@ body {
   display: flex;
 }
 .comment-button {
+  cursor: pointer;
   padding: 4px;
   border: none;
   background: rgb(59, 214, 216);
